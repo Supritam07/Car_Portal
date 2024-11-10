@@ -18,6 +18,6 @@ from django.urls import path, include
 from car_list import urls as car_list_urls
 
 urlpatterns = [
-    path('car_list/', include(car_list_urls)),
+    path('car_list/', include(car_list_urls.urlpatterns)),
     path('admin/', admin.site.urls),
 ]
